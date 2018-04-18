@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+       <style>
+            h2{
+                color:crimson;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Cadastramento de Clientes</h2>
+        <br>
+        <br>
+        <br>
+        <table border="0">
+        <form action="cadcliente.php" method="post">
+            <tr>
+            <td>Código:</td>
+            <td><input type="text" name="codigo" size="20" maxlength="5"></td>
+            </tr>
+            <tr>
+            <td>Nome:</td>
+            <td><input type="text" name="nome" size="60" maxlength="40"></td>
+            </td>
+            </tr>
+            <tr>
+            <td>Endereço:</td>
+            <td><input type="text" name="endereco" size="90" maxlength="60"></td>
+            </tr>
+            <tr>
+            <td>Bairro:</td>
+            <td><input type="text" name="bairro" size="60" maxlength="40"></td>
+            </tr>
+            <tr>
+            <td>CEP:</td>
+            <td><input type="text" name="cep" size="20" maxlength="9"></td>
+            </tr>
+            <tr>
+            <td>Cidade:</td>
+            <td><input type="text" name="cidade" size="60" maxlength="50"></td>
+            </tr>
+            <tr>
+            <td>Estado:</td><td><select name="estado">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+            </select></td>
+            </tr>
+            <tr>
+            <td>Data Nascimento:</td>
+            <td><input type="date" name="dt_nasc"></td>
+            </tr>
+            <tr>
+            <td>Sexo:</td>
+            <td><input type="radio" name="sexo" value="M">Masculino
+            <input type="radio" name="sexo" value="F">Feminino</td>
+            </tr>
+            <tr>
+            <td>Idade:</td>
+            <td><input type="number" name="idade" min="1" max="105"></td>
+            </tr>
+            <tr>
+            <td>Senha:</td>
+            <td><input type="password" name="senha" size="30" maxlength="10"></td>
+            </tr>
+            <tr>
+            <td>Avatar:</td>
+            <td><input type="file" name="avatar"></td>
+            </tr>
+            <tr>
+            <td>Observações:</td>
+            <td><textarea name="observacao" cols="30" rows="10">
+Forneça informações relevantes deste cliente.
+            </textarea></td>
+            </tr>
+            <tr>
+            <td><input type="submit" value="Enviar"></td>
+            <td><input type="reset" value="Limpar"></td>
+            
+        </form>
+        </table>
+    </body>
+</html>
